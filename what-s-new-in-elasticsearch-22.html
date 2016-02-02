@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>What's new in Elasticsearch 2.0</title>
+    <title>What's new in Elasticsearch 2.2</title>
 
-    <meta name="description" content="What's new in Elasticsearch 2.0">
+    <meta name="description" content="What's new in Elasticsearch 2.2">
     <meta name="author" content="David Pilato">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,9 +40,9 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-        <section data-background="images/new-in-20/esbackground.png" data-state="eslogo">
-            <h2>What's new in Elasticsearch 2.0</h2>
-            <img src="images/new-in-20/elastic_usergroup.jpg" style="border: 0;">
+        <section data-background="images/new-in-22/esbackground.png" data-state="eslogo">
+            <h2>What's new in Elasticsearch <strike>2.0</strike>2.2 (and 2.3?)</h2>
+            <img src="images/new-in-22/elastic_usergroup.jpg" style="border: 0;">
             <p>
                 <small><a href="http://david.pilato.fr" target="_blank">David Pilato</a> / <a href="http://twitter.com/dadoonet" target="_blank">@dadoonet</a></small>
             </p>
@@ -59,27 +59,15 @@
             </section>
             <section>
                 <h3>About Elastic</h3>
-                <ul>
-                    <li>Founded: July 2012</li>
-                    <li>Renamed Elasticsearch → Elastic: Mar 2015</li>
-                    <li>Headquaters: Amsterdam and Mountain View, CA</li>
-                    <li>Develops Elasticsearch, Logstash, Kibana, Beats</li>
-                    <li>Provides:
-                        <ul>
-                            <li>Training (public and onsite)</li>
-                            <li>Development and production support</li>
-                            <li>Hosted Elasticsearch (Found)</li>
-                            <li>Commercial plugins: Marvel, Shield, Watcher</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h3>About Elasticsearch</h3>
-                <p>
-                    <iframe src="//www.youtube.com/embed/sKnkQSec1U0" style="width: 580px; height: 326.25px;">
-                    </iframe>
-                </p>
+                <img src="images/new-in-22/new-in-22/products.png">
+                <aside class="notes">
+                    <ul>
+                        <li>Founded: July 2012: Elasticsearch</li>
+                        <li>Renamed: March 2015: Elastic</li>
+                        <li>Headquaters: Amsterdam and Mountain View, CA</li>
+                        <li>More than 300 employees. Lucene committers</li>
+                    </ul>
+                </aside>
             </section>
         </section>
 
@@ -93,7 +81,7 @@
             </section>
             <section>
                 <h3>Focus on growing up</h3>
-                <img src="images/new-in-20/growingup.jpg">
+                <img src="images/new-in-22/growingup.jpg">
             </section>
             <section>
                 <h3>Focus on growing up</h3>
@@ -111,7 +99,7 @@
             <section>
                 <h2>Simplification</h2>
                 <h3>sometimes includes removing stuff</h3>
-                <img src="images/new-in-20/trash.jpg" alt="trash">
+                <img src="images/new-in-22/trash.jpg" alt="trash">
             </section>
             <section>
                 <h3>What’s NOT in Elasticsearch 2.0</h3>
@@ -140,13 +128,17 @@
                     </li>
                     <li>Multicast discovery</li>
                 </ul>
+                <aside class="notes">
+                    Delete By Query might become again a core feature with Management API
+                </aside>
+
             </section>
         </section>
 
         <section>
             <section>
                 <h2>Simplification: Mapping changes</h2>
-                <img src="images/new-in-20/map2.jpg" alt="map">
+                <img src="images/new-in-22/map2.jpg" alt="map">
             </section>
             <section>
                 <h2>Simplification: Mapping changes</h2>
@@ -271,7 +263,7 @@
             <section>
                 <h3>Other Mapping Changes</h3>
                 <p>Check <a href="https://www.elastic.co/blog/great-mapping-refactoring">The Great Mapping Refactoring</a> blog post </p>
-                <img src="images/new-in-20/map.jpg" alt="map">
+                <img src="images/new-in-22/map.jpg" alt="map">
             </section>
 
         </section>
@@ -381,7 +373,7 @@
         <section>
             <section>
                 <h2>Security</h2>
-                <img src="images/new-in-20/security.jpg" alt="security">
+                <img src="images/new-in-22/security.jpg" alt="security">
             </section>
             <section>
                 <h3>Networking changes</h3>
@@ -424,15 +416,15 @@
             </section>
             <section>
                 <h3>Multiple data path striping</h3>
-                <img src="images/new-in-20/striping0.png">
+                <img src="images/new-in-22/striping0.png">
             </section>
             <section>
                 <h3>Before 2.0</h3>
-                <img src="images/new-in-20/striping1.png">
+                <img src="images/new-in-22/striping1.png">
             </section>
             <section>
                 <h3>After 2.0</h3>
-                <img src="images/new-in-20/striping2.png">
+                <img src="images/new-in-22/striping2.png">
             </section>
             <section>
                 <h3>Cluster State Diffs</h3>
@@ -471,7 +463,7 @@
         <section>
             <section>
                 <h2>Features</h2>
-                <img src="images/new-in-20/features.jpg" alt="features">
+                <img src="images/new-in-22/features.jpg" alt="features">
             </section>
             <section>
                 <h3>Pipeline aggs</h3>
@@ -489,15 +481,15 @@
             </section>
             <section>
                 <h3>Moving average - 10</h3>
-                <img src="images/new-in-20/movavg_10window.png" alt="Moving average">
+                <img src="images/new-in-22/movavg_10window.png" alt="Moving average">
             </section>
             <section>
                 <h3>Moving average - 100</h3>
-                <img src="images/new-in-20/movavg_100window.png" alt="Moving average">
+                <img src="images/new-in-22/movavg_100window.png" alt="Moving average">
             </section>
             <section>
                 <h3>Holt Winters - seasonal fluctuations</h3>
-                <img src="images/new-in-20/triple_prediction.png" alt="Holt Winters">
+                <img src="images/new-in-22/triple_prediction.png" alt="Holt Winters">
             </section>
 
             <section>
@@ -513,7 +505,7 @@
         <section>
             <section>
                 <h2>Plugins</h2>
-                <img src="images/new-in-20/plugins.jpg" alt="plugins">
+                <img src="images/new-in-22/plugins.jpg" alt="plugins">
             </section>
             <section>
                 <pre><code class="shell">$ mvn clean install</code></pre>
@@ -551,8 +543,45 @@ $ bin/plugin install file:p/to/cloud-aws-2.7.2.zip</code></pre>
 
         <section>
             <section>
+                <h2>Elasticsearch 2.1</h2>
+                <p>Geo-centroid aggregation</p>
+                <p>New pipeline aggregations: stats_bucket, extended_stats_bucket and percentiles_bucket</p>
+                <p>Allocation and recovery enhancements</p>
+                <p>Page size max defaults to 10 000</p>
+                <p>Update only if _source changed</p>
+                <p>Deprecate count API: size=0</p>
+                <p>Deprecate scan API: sort by _doc</p>
+            </section>
+        </section>
+ 
+        <section>
+            <section>
+                <h2>Elasticsearch 2.2</h2>
+                <p>Query profiler</p>
+                <pre><code class="json">curl -XGET 'localhost:9200/_search' -d '{
+  "profile": true,
+  "query" : {
+    "match" : { "message" : "search test" }
+  }
+}</code></pre>
+                <p>Improved geo-point fields</p>
+                <p>Stricter security for plugins and scripting</p>
+            </section>
+        </section>
+ 
+        <section>
+            <section>
+                <h2>Coming in elasticsearch 2.3</h2>
+                <p>Task Management API</p>
+                <p>Reindex API</p>
+                <p>...</p>
+            </section>
+        </section>
+ 
+        <section>
+            <section>
                 <h2>Migration Process</h2>
-                <img src="images/new-in-20/passports.jpg" alt="passports">
+                <img src="images/new-in-22/passports.jpg" alt="passports">
             </section>
             <section>
                 <h3>2.0 is a major release</h3>
@@ -562,7 +591,7 @@ $ bin/plugin install file:p/to/cloud-aws-2.7.2.zip</code></pre>
                     <li>Make sure you have a backup</li>
                     <li>Test it! Don't try to "wing it" in production.</li>
                 </ul>
-                <img src="images/new-in-20/danger.jpg" alt="danger">
+                <img src="images/new-in-22/danger.jpg" alt="danger">
             </section>
             <section>
                 <h3>Migration plugin</h3>
@@ -570,8 +599,9 @@ $ bin/plugin install file:p/to/cloud-aws-2.7.2.zip</code></pre>
                     <li>Site plugin for 1.x that checks for potential issues</li>
                     <li><a href="https://github.com/elastic/elasticsearch-migration">https://github.com/elastic/elasticsearch-migration</a></li>
                 </ul>
-                <img src="images/new-in-20/migration.png" alt="migration">
+                <img src="images/new-in-22/migration.png" alt="migration">
             </section>
+ 
             <section>
                 <h3>Getting help</h3>
                 <ul>
@@ -590,31 +620,17 @@ $ bin/plugin install file:p/to/cloud-aws-2.7.2.zip</code></pre>
 
         <section>
             <section>
-                <h3>elastic{ON} TOUR</h3>
-                <ul>
-                    <li>Amsterdam - Oct 29</li>
-                    <li>London - Nov 3</li>
-                    <li><a href="https://www.elastic.co/elasticon/tour/2015/paris" target="_blank">Paris - Nov 5</a></li>
-                    <li>München - Nov 10</li>
-                </ul>
-
-                <img src="images/new-in-20/logo-docteur-souris.png">
-            </section>
-
-            <section>
                 <h3>elastic{ON} <sup>'16</sup></h3>
                 <ul>
                     <li>Feb 17-19, 2016</li>
                     <li>Pier 48, San Francisco, CA</li>
-                    <li>Last year, Elastic{ON} sold out in just one week.</li>
                     <li><a href="https://www.elastic.co/elasticon" target="_blank">https://www.elastic.co/elasticon</a></li>
                 </ul>
-
             </section>
         </section>
 
         <section>
-            <img src="images/new-in-20/elastic_usergroup.jpg" style="border: 0;">
+            <img src="images/new-in-22/elastic_usergroup.jpg" style="border: 0;">
             <span style="text-align: left;">
                 <ul>
                     <li>Slides: <a href="http://david.pilato.fr/presentations/#/" target="_blank">http://david.pilato.fr/presentations/</a></li>
@@ -624,9 +640,9 @@ $ bin/plugin install file:p/to/cloud-aws-2.7.2.zip</code></pre>
         </section>
 
     </div>
-    <div class="footer-left"><img src="images/new-in-20/elastic.png"></div>
+    <div class="footer-left"><img src="images/new-in-22/elastic.png"></div>
     <div class="footer-site">www.elastic.co</div>
-    <div class="footer-middle"><img src="images/new-in-20/pagenumber.png"></div>
+    <div class="footer-middle"><img src="images/new-in-22/pagenumber.png"></div>
     <div class="footer-copy">CC-BY-ND 4.0</div>
     <hr class="footer-left">
     <hr class="footer-right">
